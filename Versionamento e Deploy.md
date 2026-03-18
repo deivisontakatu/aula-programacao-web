@@ -2,7 +2,6 @@
 
 **Disciplina:** Desenvolvimento Web  
 **Professor:** Prof. Me. Deivison S. Takatu  
-**Contato:** deivison.takatu@facens.br  
 
 ---
 
