@@ -1,183 +1,143 @@
-# 📘 HTML – Fundamentos, Mídias e SEO
+# 📘 HTML com SEO
 
-Este material reúne os principais conceitos apresentados em três aulas introdutórias de **HTML**, abordando **fundamentos**, **trabalhos com mídias** e **práticas de SEO**.
+## 🔍 O que é SEO
+SEO (Search Engine Optimization) é o conjunto de técnicas usadas para melhorar o posicionamento de páginas nos buscadores.
 
 ---
 
-## 1️⃣ Fundamentos do HTML
+## 🧠 HTML aplicado ao SEO
+O HTML é fundamental para SEO porque define a estrutura e o significado do conteúdo para os motores de busca.
 
-### O que é HTML
-**HTML (HyperText Markup Language)** é a linguagem de marcação usada para estruturar páginas na web.  
-Define a organização e a semântica do conteúdo exibido em navegadores.
+---
 
-### Estrutura Básica de um Documento HTML
+## 🏷️ Metadados (Meta Tags)
+
 ```html
-<!DOCTYPE html>
-<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Título da Página</title>
+  <meta charset="UTF-8"> <!-- Codificação correta -->
+
+  <meta name="description" content="Descrição da página"> <!-- Resumo exibido no Google -->
+  <meta name="keywords" content="html, seo, web"> <!-- Palavras-chave (menos usado hoje) -->
+  <meta name="author" content="Seu Nome"> <!-- Autor da página -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
 </head>
-<body>
-  <h1>Meu primeiro site</h1>
-  <p>Bem-vindo ao mundo do HTML!</p>
-</body>
-</html>
 ```
-
-- `<!DOCTYPE html>`: define a versão do HTML (HTML5).
-- `<html>`: elemento raiz.
-- `<head>`: informações de configuração e metadados.
-- `<body>`: conteúdo visível da página.
-
-### Principais Elementos
-- **Títulos:** `<h1>` a `<h6>`.
-- **Parágrafos:** `<p>`.
-- **Links:** `<a href="...">`.
-- **Listas:** `<ul>` (não ordenadas), `<ol>` (ordenadas), `<li>` (itens).
-- **Imagens:** `<img src="..." alt="...">`.
-- **Tabelas:** `<table>`, `<tr>`, `<td>`, `<th>`.
-
-### Semântica
-Utilize **tags semânticas** para dar significado ao conteúdo:
-- `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>`, `<aside>`, `<main>`.
-
-### Boas Práticas
-- Código limpo e indentado.
-- Atributos `alt` em imagens para acessibilidade.
-- Uso consistente de tags semânticas para SEO.
 
 ---
 
-## 2️⃣ Mídias em HTML
+## 🧱 Títulos e Hierarquia
 
-### Imagens
 ```html
-<img src="caminho/imagem.jpg" alt="Descrição da imagem">
-```
-- `alt`: descreve a imagem para acessibilidade e SEO.
-- Formatos: **JPEG** (fotografias), **PNG** (transparência), **SVG** (vetorial), **WebP** (otimização).
-
-### Áudio
-```html
-<audio controls>
-  <source src="musica.mp3" type="audio/mpeg">
-  Seu navegador não suporta áudio.
-</audio>
-```
-- Atributos: `controls`, `autoplay`, `loop`, `muted`.
-
-### Vídeo
-```html
-<video controls width="640">
-  <source src="video.mp4" type="video/mp4">
-  Seu navegador não suporta vídeo.
-</video>
-```
-- Formatos: MP4 (H.264), WebM, Ogg.
-- Atributos: `poster` (imagem de capa), `controls`, `autoplay`.
-
-### Mídias Externas
-- **YouTube/Vimeo:** uso de `<iframe>` para embutir vídeos.
-```html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ID_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+<h1>Título principal</h1> <!-- Mais importante (usar apenas 1) -->
+<h2>Seção</h2>
+<h3>Subseção</h3>
 ```
 
-### Boas Práticas para Mídias
-- Otimize o tamanho de arquivos para melhor performance.
-- Forneça alternativas de texto para acessibilidade.
-- Use formatos modernos para melhor compressão (ex.: WebP).
+✔ Ajuda o Google a entender a estrutura do conteúdo  
 
 ---
 
-## 3️⃣ SEO com HTML
+## 🧩 Tags Semânticas
 
-### O que é SEO
-**SEO (Search Engine Optimization)** é o conjunto de técnicas para melhorar o **ranqueamento** de páginas em motores de busca como Google.
-
-### Metadados Importantes
 ```html
-<meta name="description" content="Descrição do conteúdo da página">
-<meta name="keywords" content="html, seo, web">
-<meta name="author" content="Seu Nome">
+<header></header> <!-- Cabeçalho -->
+<main></main> <!-- Conteúdo principal -->
+<section></section> <!-- Seção -->
+<article></article> <!-- Conteúdo independente -->
+<nav></nav> <!-- Navegação -->
+<footer></footer> <!-- Rodapé -->
 ```
 
-- `description`: resumo da página exibido nos resultados de busca.
-- `keywords`: menos relevante hoje, mas pode ser usado.
-- `author`: identifica o autor da página.
-
-### Títulos e Hierarquia
-- Use apenas **um `<h1>`** por página.
-- Estruture o conteúdo com `<h2>`, `<h3>`... para indicar seções e subtópicos.
-
-### URLs Amigáveis
-- Prefira URLs curtas e descritivas:  
-  `https://site.com/blog/seo-html`  
-  em vez de  
-  `https://site.com/?p=123`.
-
-### Links Internos e Externos
-- **Links internos:** ajudam na navegação e na indexação.
-- **Links externos:** use `rel="noopener noreferrer"` para segurança.
-
-### Imagens e SEO
-- Use nomes de arquivo descritivos: `banner-promocao.jpg`.
-- Atributo `alt` para contexto aos buscadores.
-
-### Estrutura de Dados
-- Marcação semântica (HTML5) e **Schema.org** ajudam buscadores a entender o conteúdo.
-
-### Performance e Mobile
-- **Responsividade:** uso de `<meta name="viewport">`.
-- **Velocidade de carregamento:** imagens otimizadas, cache e minificação de recursos.
+✔ Melhoram a interpretação do conteúdo pelos buscadores  
 
 ---
 
-## 🛡️ Dicas Extras e Melhorias
+## 🔗 Links
 
-### Exemplos Visuais
-- Inclua capturas de tela do código HTML, resultado no navegador e exemplos de boas práticas de SEO.
-- Documente cada etapa com imagens para facilitar o acompanhamento.
+### Internos
+```html
+<a href="/contato">Contato</a> <!-- Navegação dentro do site -->
+```
 
-### Glossário Rápido
-- **Tag Semântica:** Elemento HTML que indica o significado do conteúdo (ex.: `<header>`, `<main>`, `<footer>`).
-- **Alt Text:** Texto alternativo para imagens, importante para acessibilidade e SEO.
-- **Meta Tag:** Elemento no `<head>` que fornece informações sobre a página.
-- **Responsividade:** Capacidade do site de se adaptar a diferentes tamanhos de tela.
-- **Schema.org:** Padrão de marcação para ajudar buscadores a entender o conteúdo.
+### Externos
+```html
+<a href="https://site.com" rel="noopener noreferrer">Acessar</a> <!-- Segurança -->
+```
 
-### Checklist de Publicação
-- [ ] Estrutura básica do HTML criada
-- [ ] Tags semânticas utilizadas corretamente
-- [ ] Imagens otimizadas e com atributo `alt`
-- [ ] Metadados preenchidos (`description`, `author`)
-- [ ] URLs amigáveis implementadas
-- [ ] Conteúdo hierarquizado com `<h1>`, `<h2>`, etc.
-- [ ] Links internos e externos revisados
-- [ ] Site testado em dispositivos móveis
-- [ ] Performance avaliada (Google PageSpeed, Lighthouse)
-
-### Dicas de Boas Práticas
-- Mantenha o código limpo e indentado.
-- Use nomes de arquivos descritivos para imagens e páginas.
-- Prefira tags semânticas para melhor SEO e acessibilidade.
-- Evite excesso de `<div>` sem propósito (div soup).
-- Teste o site em diferentes navegadores e dispositivos.
-
-### Segurança e Acessibilidade
-- Sempre utilize o atributo `alt` em imagens.
-- Garanta contraste adequado entre texto e fundo.
-- Certifique-se de que todos os links são acessíveis por teclado.
-- Use `rel="noopener noreferrer"` em links externos para segurança.
-
-### Links Úteis
-- [Guia de Acessibilidade Web](https://www.w3.org/WAI/test-evaluate/)
-- [Google PageSpeed Insights](https://pagespeed.web.dev/)
-- [Schema.org](https://schema.org/)
-- [Checklist SEO Moz](https://moz.com/blog/seo-checklist)
+✔ Melhoram navegação e indexação  
 
 ---
 
-💡 **Dica Final:**  
-Revise seu site periodicamente, mantenha o conteúdo atualizado e peça feedback de usuários reais para aprimorar a experiência e o ranqueamento nos buscadores.
+## 🖼️ Imagens e SEO
+
+```html
+<img src="produto.jpg" alt="Produto em promoção">
+```
+
+✔ `alt` descreve a imagem para o Google  
+✔ Nome do arquivo deve ser descritivo  
+
+---
+
+## 🌐 URLs Amigáveis
+
+✔ Correto:
+```
+site.com/blog/html-seo
+```
+
+❌ Errado:
+```
+site.com/?id=123
+```
+
+✔ URLs claras ajudam no ranqueamento  
+
+---
+
+## ⚡ Performance e Responsividade
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+✔ Site adaptável a mobile  
+✔ Melhora experiência do usuário  
+
+---
+
+## 🧠 Estrutura Semântica + SEO
+
+✔ Usar HTML5 semântico ajuda buscadores a entender:
+- conteúdo principal
+- navegação
+- informações secundárias  
+
+---
+
+## 📊 Boas práticas de SEO em HTML
+
+- Usar apenas um `<h1>`  
+- Organizar títulos corretamente (`h1 → h2 → h3`)  
+- Utilizar `alt` em imagens  
+- Usar tags semânticas  
+- Criar URLs descritivas  
+- Preencher meta description  
+- Garantir responsividade  
+
+---
+
+## 📋 Checklist SEO
+
+- [ ] Meta description definida  
+- [ ] Uso correto de headings  
+- [ ] Imagens com alt  
+- [ ] Tags semânticas aplicadas  
+- [ ] Links organizados  
+- [ ] Página responsiva  
+
+---
+
+## 💡 Dica Final
+HTML bem estruturado + conteúdo de qualidade = melhor posicionamento no Google.
