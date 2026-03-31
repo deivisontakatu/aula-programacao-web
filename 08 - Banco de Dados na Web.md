@@ -3,6 +3,8 @@
 ## 🎯 Introdução
 - O que é persistência de dados
 
+- Persistência de dadoss
+
 ## 🧱 Tipos de Banco
 - Relacional (SQL)
 - Não relacional (NoSQL)
