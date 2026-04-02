@@ -1,4 +1,4 @@
-# 🌐 07 - Comunicação Web
+# 🌐 Comunicação Web
 
 A comunicação web é baseada no modelo **cliente-servidor**, onde um cliente (navegador) envia requisições a um servidor, que processa e retorna respostas.
 

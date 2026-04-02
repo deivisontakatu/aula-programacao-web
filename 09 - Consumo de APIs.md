@@ -1,4 +1,4 @@
-# 🌐 09 - Consumo de APIs
+# 🌐 Consumo de APIs
 
 Este tópico aborda a criação de aplicações web que consomem APIs públicas e privadas, integrando frontend, backend e banco de dados dentro de um projeto estruturado com metodologia ágil.
 

@@ -1,4 +1,4 @@
-# 🛢️ 08 - Banco de Dados na Web
+# 🛢️ Banco de Dados na Web
 
 Os sistemas web modernos dependem de bancos de dados para armazenar e gerenciar informações de forma persistente.
 

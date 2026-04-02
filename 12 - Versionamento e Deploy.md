@@ -1,8 +1,5 @@
 # Introdução ao Versionamento e Deploy
 
-**Disciplina:** Desenvolvimento Web  
-**Professor:** Prof. Me. Deivison S. Takatu  
-
 ---
 
 ## 📚 Conteúdo da Aula

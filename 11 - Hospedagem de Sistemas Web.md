@@ -1,17 +1,22 @@
-# Servidores e Opções de Hospedagem / CMS
+# 🌐 Hospedagem de Sistemas Web
 
-**Disciplina:** Desenvolvimento Web  
-**Professor:** Prof. Me. Deivison S. Takatu  
+A hospedagem de sistemas web é a etapa responsável por disponibilizar uma aplicação na internet, permitindo que usuários acessem o sistema a qualquer momento e de qualquer lugar.
 
 ---
 
-## 📚 Conteúdo da Aula
+## 🎯 Objetivo
 
-- Registro de Domínio  
-- Hospedagem de Sites  
-- Sistema de Gerenciamento de Conteúdo (CMS)  
-- WordPress e principais funcionalidades  
-- Ferramentas para configuração do WordPress  
+Garantir que a aplicação:
+- Esteja acessível online
+- Seja escalável e performática
+- Tenha alta disponibilidade
+- Seja segura
+
+---
+
+## 🌍 O que é Hospedagem?
+
+Hospedagem é o processo de armazenar e executar uma aplicação em um servidor conectado à internet.
 
 ---
 
@@ -20,40 +25,149 @@
 O **domínio** é o endereço único do seu site (ex.: `www.meusite.com`).
 
 ### Como Registrar
-- **Diretamente**: Plataformas como [Registro.br](https://registro.br), GoDaddy, Namecheap.  
-- **Via hospedagem**: Empresas como HostGator, Hostinger e Locaweb (domínio grátis em plano anual).  
-- **Marketplaces**: Compra de domínios premium já registrados (ex.: Sedo, Flippa).
+- Diretamente: Registro.br, GoDaddy, Namecheap  
+- Via hospedagem: HostGator, Hostinger, Locaweb  
+- Marketplaces: Sedo, Flippa  
 
 ### Boas Práticas
-- Escolha um **nome estratégico**: curto, memorável, sem números ou hífens.  
-- **Extensões comuns**:  
-  - `.com` → popular e confiável  
-  - `.org` → ideal para ONGs  
-  - `.net` → tecnologia  
-  - `.br`, `.pt` → atuação local
-- Verifique disponibilidade em registradores confiáveis.  
-- Registre **variantes** para proteger a marca.
+- Nome curto e memorável  
+- Evitar números e hífens  
+- Registrar variações do domínio  
 
 ---
 
 ## 🏢 Hospedagem de Sites
-Três exemplos de provedores de hospedagem: HostGator, Hostinger e Locaweb.  
-[Guia de comparação](https://tudosobrehospedagemdesites.com.br/melhor-hospedagem-de-site/)
+
+Hospedagem é o serviço que mantém seu site acessível na internet.
+
+---
+
+## 🖥️ Tipos de Hospedagem
+
+### 🔹 Compartilhada
+- Baixo custo  
+- Recursos limitados  
+
+### 🔹 VPS
+- Ambiente isolado  
+- Mais controle  
+
+### 🔹 Dedicado
+- Alto desempenho  
+- Alto custo  
+
+### 🔹 Cloud
+- Escalável  
+- Alta disponibilidade  
+
+---
+
+## ⚙️ Servidores Web
+
+Servidores web processam requisições HTTP e retornam respostas.
+
+---
+
+## 🧰 Principais Servidores
+
+### 🌐 Apache
+- Flexível  
+- Popular  
+
+### ⚡ Nginx
+- Alta performance  
+- Proxy reverso  
+
+### ☕ Tomcat
+- Aplicações Java  
+
+### 🟢 Node.js
+- Assíncrono  
+- Tempo real  
+
+---
+
+## 🔄 Funcionamento
+
+1. Cliente envia requisição  
+2. Servidor processa  
+3. Resposta é retornada  
+
+---
+
+## ⚖️ Impacto na Construção
+
+### Performance
+- Nginx → melhor para alta carga  
+- Apache → mais flexível  
+
+### Segurança
+- HTTPS  
+- Controle de acesso  
+
+### Arquitetura
+- Proxy reverso  
+- Balanceamento  
+
+---
+
+## 🔗 Proxy Reverso
+
+Intermediário entre cliente e servidor backend.
+
+---
+
+## ⚖️ Balanceamento de Carga
+
+Distribui requisições entre servidores.
+
+---
+
+## 🧊 Containers na Hospedagem
+
+Permitem isolamento e portabilidade.
+
+```bash
+docker run -d -p 80:3000 minha-app
+```
+
+---
+
+## ☁️ Deploy em Nuvem
+
+- AWS  
+- Azure  
+- Google Cloud  
+
+---
+
+## 🔐 Segurança
+
+- SSL/TLS  
+- Firewall  
+- Atualizações  
+
+---
+
+## 📊 Monitoramento
+
+- CPU  
+- Memória  
+- Logs  
+
+---
+
+## 🚀 CI/CD
+
+Automação de deploy:
+- GitHub Actions  
+- Jenkins  
 
 ---
 
 ## 📝 Sistema de Gerenciamento de Conteúdo (CMS)
 
-Plataforma que permite **criar, modificar e publicar conteúdo digital** de forma eficiente.  
-Facilita colaboração entre múltiplos usuários com diferentes níveis de acesso.
-
-### Principais Funcionalidades
-- Gerenciamento de texto, mídia e código.  
-- **SEO integrado** (URLs amigáveis).  
-- Comunidade e suporte ativo.  
-- Gestão de usuários e permissões.  
-- Design flexível com **templates**.  
-- Facilidade de uso e atualizações automáticas.
+Plataformas que permitem gerenciar conteúdo sem necessidade de programação avançada.
 
 ---
 
@@ -61,111 +175,104 @@ Facilita colaboração entre múltiplos usuários com diferentes níveis de aces
 
 | WordPress.com | WordPress.org |
 |---------------|--------------|
-| Plataforma gratuita para criação e hospedagem de blogs. | Software open source para download e instalação. |
-| Não exige hospedagem ou domínio próprio. | Requer hospedagem própria e registro de domínio. |
-| Domínio limitado a `seusite.wordpress.com`. | Maior controle e personalização (temas, plugins). |
-| Menos flexibilidade de expansão. | Exige conhecimento técnico para gerenciamento. |
+| Hospedado     | Auto-hospedado |
+| Simples       | Mais controle |
 
 ---
 
-## 🚀 WordPress (WP)
+## 🚀 WordPress
 
-- Um dos **CMS mais populares do mundo**, de **código aberto**.  
-- Flexível: blogs, sites corporativos, e-commerces, portais de notícias e muito mais.
+CMS mais popular do mundo.
 
 ### Vantagens
-- **Fácil de usar**: interface intuitiva.  
-- **Extensível**: milhares de plugins e temas.  
-- **Comunidade ativa**: suporte e atualizações constantes.
-
-### Exemplos de Uso
-- [USP](https://www5.usp.br/)  
-- [White House](https://www.whitehouse.gov/)  
-- [WordPress Showcase](https://wordpress.org/showcase/)
+- Fácil uso  
+- Extensível  
+- Grande comunidade  
 
 ---
 
 ## 🎨 Temas
 
-- Definem **layout e design** do site.  
-- Composto por imagens, scripts (PHP, JS) e folhas de estilo (CSS).  
-- Podem ser **gratuitos ou pagos**.  
-- Recomendável **personalizar** para atender necessidades específicas.
+Definem layout e aparência do site.
 
 ---
 
 ## 🔌 Plugins
 
-- Complementos que **adicionam ou modificam funcionalidades** do site.  
-- Podem ir de simples recursos a integrações complexas (e-commerce, SEO, segurança).  
-- [Plugins populares](https://br.wordpress.org/plugins/browse/popular/)
+Adicionam funcionalidades:
+- SEO  
+- Segurança  
+- E-commerce  
 
 ---
 
 ## 📄 Páginas e Widgets
 
-- **Páginas**: semelhantes a posts, com hierarquia e templates.  
-- **Widgets**: pequenas caixas de conteúdo dinâmico ou estático (ex.: lista de links, arquivos, categorias).
+- Páginas → conteúdo estruturado  
+- Widgets → componentes dinâmicos  
 
 ---
 
 ## 🛠️ Atividade Prática
 
-1. Criar conta em uma ferramenta de hospedagem gratuita (ex.: [Pantheon](https://pantheon.io/)).  
-2. Instalar um **CMS** de sua escolha.  
-3. Configurar e testar o acesso à plataforma.  
-4. Explorar personalização instalando **temas** e **plugins**.  
-5. Editar a página inicial para refletir a proposta do site.  
-6. Compilar o processo em um documento organizado e enviar na plataforma **CANVAS**.
+1. Criar conta em hospedagem  
+2. Instalar CMS  
+3. Configurar sistema  
+4. Personalizar com temas/plugins  
+5. Documentar processo  
 
 ---
 
-## 🛡️ Dicas Extras e Melhorias
+## 📊 Comparativo de Hospedagem
 
-### Exemplos Práticos
-- Inclua capturas de tela do processo de registro de domínio, instalação do CMS e configuração da hospedagem.
-- Sugestão: Documente cada etapa com imagens para facilitar o acompanhamento.
-
-### Comparativo de Hospedagem
-| Provedor     | Preço Inicial | Suporte | Domínio Grátis | Painel de Controle |
-|--------------|---------------|---------|----------------|--------------------|
-| HostGator    | R$ 9,99/mês   | 24h     | Sim            | cPanel             |
-| Hostinger    | R$ 7,99/mês   | 24h     | Sim            | hPanel             |
-| Locaweb      | R$ 12,90/mês  | 24h     | Sim            | cPanel             |
-
-### Glossário Rápido
-- **DNS:** Sistema que traduz nomes de domínio para endereços IP.
-- **FTP:** Protocolo para transferência de arquivos entre computador e servidor.
-- **SSL:** Certificado que garante conexão segura (https).
-
-### Links Úteis
-- [Tutorial WordPress Oficial](https://wordpress.org/support/article/new-to-wordpress-where-to-start/)
-- [Guia de Segurança WordPress](https://wordpress.org/support/article/hardening-wordpress/)
-
-### Checklist de Publicação
-- [ ] Domínio registrado
-- [ ] Hospedagem configurada
-- [ ] CMS instalado
-- [ ] Tema personalizado
-- [ ] Plugins essenciais instalados
-- [ ] Página inicial editada
-- [ ] Backup realizado
-
-### Segurança e Acessibilidade
-- Mantenha o CMS e plugins sempre atualizados.
-- Use senhas fortes e autenticação em dois fatores.
-- Adicione textos alternativos em imagens e garanta bom contraste de cores.
+| Provedor  | Preço | Suporte | Domínio |
+|-----------|------|--------|--------|
+| HostGator | Baixo | 24h | Sim |
+| Hostinger | Baixo | 24h | Sim |
+| Locaweb   | Médio | 24h | Sim |
 
 ---
 
-## 📚 Referências
+## 📚 Glossário
 
-- MACDONALD, Matthew. *WordPress: The Missing Manual*. 3. ed. O'Reilly Media, 2020. ISBN 978-1492074167.  
-- MESSENLEHNER, Brian; COLEMAN, Jason. *Building Web Apps with WordPress: WordPress as an Application Framework*. 2. ed. O'Reilly Media, 2019. ISBN 978-1491990048.  
-- [Pantheon](https://pantheon.io/) – WebOps Platform for Drupal & WordPress Hosting.  
-- [W3Techs](https://w3techs.com/) – Market share of content management systems.  
-- [WordPress.org](https://wordpress.org/) – Crie um site ou blog gratuitamente.  
+- DNS → traduz domínio em IP  
+- FTP → transferência de arquivos  
+- SSL → conexão segura  
 
 ---
 
-💡 **Dica Final:** Revise seu site em diferentes dispositivos e navegadores para garantir boa experiência para todos os usuários.
+## 📌 Checklist
+
+- Domínio registrado  
+- Hospedagem ativa  
+- CMS instalado  
+- Tema configurado  
+- Plugins instalados  
+
+---
+
+## 🔐 Boas Práticas
+
+- Separar ambientes (dev/prod)  
+- Backup frequente  
+- Monitoramento  
+
+---
+
+## 🎯 Conclusão
+
+A hospedagem impacta diretamente:
+
+- Performance  
+- Segurança  
+- Escalabilidade  
+- Disponibilidade  
+
+---
+
+## ✅ Resumo
+
+- Hospedagem disponibiliza sistemas  
+- Servidores influenciam desempenho  
+- CMS facilita criação de sites  
+- Containers e cloud são padrões modernos  

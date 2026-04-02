@@ -1,8 +1,5 @@
 # Introdução a Frameworks Front-end
 
-**Disciplina:** Desenvolvimento Web  
-**Professor:** Prof. Me. Deivison S. Takatu  
-
 ---
 
 ## 📚 Conteúdo da Aula
