@@ -1,33 +1,69 @@
-# 🗄️ Banco de Dados em Sistemas Web
+# 🛢️ 08 - Banco de Dados na Web
 
-## 🎯 Introdução
-- O que é persistência de dados
+Os sistemas web modernos dependem de bancos de dados para armazenar e gerenciar informações de forma persistente.
 
-- Persistência de dadoss
+---
 
-## 🧱 Tipos de Banco
-- Relacional (SQL)
-- Não relacional (NoSQL)
+## 🎯 Objetivo
 
-## 🧮 Modelagem de Dados
-- Entidades
-- Relacionamentos
-- DER
+Permitir que aplicações web:
 
-## 💾 SQL Básico
-- SELECT
-- INSERT
-- UPDATE
-- DELETE
+* Armazenem dados de forma permanente
+* Recuperem informações de maneira eficiente
+* Garantam integridade e consistência
 
-## 🔗 Integração com Back-end
-- Conexão com banco
-- CRUD
+---
 
-## 🧩 ORM (Object Relational Mapping)
-- Conceito
-- Exemplos (Sequelize, Hibernate)
+## 💾 Persistência de Dados
 
-## ⚡ Boas práticas
+Persistência é a capacidade de manter dados mesmo após o encerramento da aplicação.
 
-## ✨ Resumo
+### 📌 Exemplos:
+
+* Cadastro de usuários
+* Histórico de compras
+* Registros acadêmicos
+
+---
+
+## 🌐 Integração com Sistemas Web
+
+Em aplicações web:
+
+1. O cliente envia uma requisição
+2. O servidor processa a lógica
+3. O sistema acessa o banco de dados
+4. Retorna uma resposta ao cliente
+
+---
+
+## 🧱 Tipos de Bancos de Dados
+
+### 🔹 Relacionais (SQL)
+
+* MySQL, PostgreSQL, SQL Server
+* Estrutura em tabelas
+
+### 🔹 Não Relacionais (NoSQL)
+
+* MongoDB, Redis
+* Estrutura flexível (documentos, chave-valor)
+
+---
+
+## ⚠️ Desafios
+
+* Concorrência de acesso
+* Segurança dos dados
+* Performance
+* Escalabilidade
+
+---
+
+## ✅ Resumo
+
+* Banco de dados garante persistência
+* Essencial para aplicações web dinâmicas
+* Pode ser relacional ou não relacional
+
+---
